@@ -1,0 +1,15 @@
+C:\Users\CHUZZY\Desktop\BYU PATHWAY WORLDWIDE\BYU_IDAHO\TERM_2\CSE210.001 - Programming with Class\cse210\cse210_hw\week02\Resumes\bin\Debug\net8.0\Resumes.exe
+C:\Users\CHUZZY\Desktop\BYU PATHWAY WORLDWIDE\BYU_IDAHO\TERM_2\CSE210.001 - Programming with Class\cse210\cse210_hw\week02\Resumes\bin\Debug\net8.0\Resumes.deps.json
+C:\Users\CHUZZY\Desktop\BYU PATHWAY WORLDWIDE\BYU_IDAHO\TERM_2\CSE210.001 - Programming with Class\cse210\cse210_hw\week02\Resumes\bin\Debug\net8.0\Resumes.runtimeconfig.json
+C:\Users\CHUZZY\Desktop\BYU PATHWAY WORLDWIDE\BYU_IDAHO\TERM_2\CSE210.001 - Programming with Class\cse210\cse210_hw\week02\Resumes\bin\Debug\net8.0\Resumes.dll
+C:\Users\CHUZZY\Desktop\BYU PATHWAY WORLDWIDE\BYU_IDAHO\TERM_2\CSE210.001 - Programming with Class\cse210\cse210_hw\week02\Resumes\bin\Debug\net8.0\Resumes.pdb
+C:\Users\CHUZZY\Desktop\BYU PATHWAY WORLDWIDE\BYU_IDAHO\TERM_2\CSE210.001 - Programming with Class\cse210\cse210_hw\week02\Resumes\obj\Debug\net8.0\Resumes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CHUZZY\Desktop\BYU PATHWAY WORLDWIDE\BYU_IDAHO\TERM_2\CSE210.001 - Programming with Class\cse210\cse210_hw\week02\Resumes\obj\Debug\net8.0\Resumes.AssemblyInfoInputs.cache
+C:\Users\CHUZZY\Desktop\BYU PATHWAY WORLDWIDE\BYU_IDAHO\TERM_2\CSE210.001 - Programming with Class\cse210\cse210_hw\week02\Resumes\obj\Debug\net8.0\Resumes.AssemblyInfo.cs
+C:\Users\CHUZZY\Desktop\BYU PATHWAY WORLDWIDE\BYU_IDAHO\TERM_2\CSE210.001 - Programming with Class\cse210\cse210_hw\week02\Resumes\obj\Debug\net8.0\Resumes.csproj.CoreCompileInputs.cache
+C:\Users\CHUZZY\Desktop\BYU PATHWAY WORLDWIDE\BYU_IDAHO\TERM_2\CSE210.001 - Programming with Class\cse210\cse210_hw\week02\Resumes\obj\Debug\net8.0\Resumes.sourcelink.json
+C:\Users\CHUZZY\Desktop\BYU PATHWAY WORLDWIDE\BYU_IDAHO\TERM_2\CSE210.001 - Programming with Class\cse210\cse210_hw\week02\Resumes\obj\Debug\net8.0\Resumes.dll
+C:\Users\CHUZZY\Desktop\BYU PATHWAY WORLDWIDE\BYU_IDAHO\TERM_2\CSE210.001 - Programming with Class\cse210\cse210_hw\week02\Resumes\obj\Debug\net8.0\refint\Resumes.dll
+C:\Users\CHUZZY\Desktop\BYU PATHWAY WORLDWIDE\BYU_IDAHO\TERM_2\CSE210.001 - Programming with Class\cse210\cse210_hw\week02\Resumes\obj\Debug\net8.0\Resumes.pdb
+C:\Users\CHUZZY\Desktop\BYU PATHWAY WORLDWIDE\BYU_IDAHO\TERM_2\CSE210.001 - Programming with Class\cse210\cse210_hw\week02\Resumes\obj\Debug\net8.0\Resumes.genruntimeconfig.cache
+C:\Users\CHUZZY\Desktop\BYU PATHWAY WORLDWIDE\BYU_IDAHO\TERM_2\CSE210.001 - Programming with Class\cse210\cse210_hw\week02\Resumes\obj\Debug\net8.0\ref\Resumes.dll
