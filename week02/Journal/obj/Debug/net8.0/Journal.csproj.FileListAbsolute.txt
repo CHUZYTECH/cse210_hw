@@ -1,0 +1,15 @@
+C:\Users\CHUZZY\Desktop\BYU PATHWAY WORLDWIDE\BYU_IDAHO\TERM_2\CSE210.001 - Programming with Class\cse210\cse210_hw\week02\Journal\bin\Debug\net8.0\Journal.exe
+C:\Users\CHUZZY\Desktop\BYU PATHWAY WORLDWIDE\BYU_IDAHO\TERM_2\CSE210.001 - Programming with Class\cse210\cse210_hw\week02\Journal\bin\Debug\net8.0\Journal.deps.json
+C:\Users\CHUZZY\Desktop\BYU PATHWAY WORLDWIDE\BYU_IDAHO\TERM_2\CSE210.001 - Programming with Class\cse210\cse210_hw\week02\Journal\bin\Debug\net8.0\Journal.runtimeconfig.json
+C:\Users\CHUZZY\Desktop\BYU PATHWAY WORLDWIDE\BYU_IDAHO\TERM_2\CSE210.001 - Programming with Class\cse210\cse210_hw\week02\Journal\bin\Debug\net8.0\Journal.dll
+C:\Users\CHUZZY\Desktop\BYU PATHWAY WORLDWIDE\BYU_IDAHO\TERM_2\CSE210.001 - Programming with Class\cse210\cse210_hw\week02\Journal\bin\Debug\net8.0\Journal.pdb
+C:\Users\CHUZZY\Desktop\BYU PATHWAY WORLDWIDE\BYU_IDAHO\TERM_2\CSE210.001 - Programming with Class\cse210\cse210_hw\week02\Journal\obj\Debug\net8.0\Journal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CHUZZY\Desktop\BYU PATHWAY WORLDWIDE\BYU_IDAHO\TERM_2\CSE210.001 - Programming with Class\cse210\cse210_hw\week02\Journal\obj\Debug\net8.0\Journal.AssemblyInfoInputs.cache
+C:\Users\CHUZZY\Desktop\BYU PATHWAY WORLDWIDE\BYU_IDAHO\TERM_2\CSE210.001 - Programming with Class\cse210\cse210_hw\week02\Journal\obj\Debug\net8.0\Journal.AssemblyInfo.cs
+C:\Users\CHUZZY\Desktop\BYU PATHWAY WORLDWIDE\BYU_IDAHO\TERM_2\CSE210.001 - Programming with Class\cse210\cse210_hw\week02\Journal\obj\Debug\net8.0\Journal.csproj.CoreCompileInputs.cache
+C:\Users\CHUZZY\Desktop\BYU PATHWAY WORLDWIDE\BYU_IDAHO\TERM_2\CSE210.001 - Programming with Class\cse210\cse210_hw\week02\Journal\obj\Debug\net8.0\Journal.sourcelink.json
+C:\Users\CHUZZY\Desktop\BYU PATHWAY WORLDWIDE\BYU_IDAHO\TERM_2\CSE210.001 - Programming with Class\cse210\cse210_hw\week02\Journal\obj\Debug\net8.0\Journal.dll
+C:\Users\CHUZZY\Desktop\BYU PATHWAY WORLDWIDE\BYU_IDAHO\TERM_2\CSE210.001 - Programming with Class\cse210\cse210_hw\week02\Journal\obj\Debug\net8.0\refint\Journal.dll
+C:\Users\CHUZZY\Desktop\BYU PATHWAY WORLDWIDE\BYU_IDAHO\TERM_2\CSE210.001 - Programming with Class\cse210\cse210_hw\week02\Journal\obj\Debug\net8.0\Journal.pdb
+C:\Users\CHUZZY\Desktop\BYU PATHWAY WORLDWIDE\BYU_IDAHO\TERM_2\CSE210.001 - Programming with Class\cse210\cse210_hw\week02\Journal\obj\Debug\net8.0\Journal.genruntimeconfig.cache
+C:\Users\CHUZZY\Desktop\BYU PATHWAY WORLDWIDE\BYU_IDAHO\TERM_2\CSE210.001 - Programming with Class\cse210\cse210_hw\week02\Journal\obj\Debug\net8.0\ref\Journal.dll
