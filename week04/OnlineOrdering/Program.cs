@@ -1,97 +1,5 @@
-using System;
-using System.Collections.Generic;
-
-class Program
-{
-    static void Main()
-    {
-        // Creating Products
-        Product product1 = new Product("Laptop", "P1001", 800, 1);
-        Product product2 = new Product("Mouse", "P1002", 25, 2);
-        Product product3 = new Product("Keyboard", "P1003", 50, 1);
-
-        // Creating Customer with Address
-        Address address1 = new Address("123 Elm St", "Los Angeles", "CA", "USA");
-        Customer customer1 = new Customer("John Doe", address1);
-
-        Address address2 = new Address("456 Pine St", "Toronto", "ON", "Canada");
-        Customer customer2 = new Customer("Jane Smith", address2);
-
-        // Creating Orders
-        Order order1 = new Order(customer1);
-        order1.AddProduct(product1);
-        order1.AddProduct(product2);
-
-        Order order2 = new Order(customer2);
-        order2.AddProduct(product2);
-        order2.AddProduct(product3);
-
-        // Displaying Order Details
-        Console.WriteLine("Order 1:");
-        Console.WriteLine(order1.GetPackingLabel());
-        Console.WriteLine(order1.GetShippingLabel());
-        Console.WriteLine($"Total Price: ${order1.CalculateTotalPrice()}");
-        Console.WriteLine();
-
-        Console.WriteLine("Order 2:");
-        Console.WriteLine(order2.GetPackingLabel());
-        Console.WriteLine(order2.GetShippingLabel());
-        Console.WriteLine($"Total Price: ${order2.CalculateTotalPrice()}");
-    }
-}
-
-// Product Class
-class Product
-{
-    private string _name;
-    private string _productId;
-    private double _price;
-    private int _quantity;
-
-    public Product(string name, string productId, double price, int quantity)
-    {
-        _name = name;
-        _productId = productId;
-        _price = price;
-        _quantity = quantity;
-    }
-
-    public double GetTotalCost()
-    {
-        return _price * _quantity;
-    }
-
-    public string GetPackingLabel()
-    {
-        return $"{_name} (ID: {_productId})";
-    }
-}
-
-// Customer Class
-class Customer
-{
-    private string _name;
-    private Address _address;
-
-    public Customer(string name, Address address)
-    {
-        _name = name;
-        _address = address;
-    }
-
-    public bool LivesInUSA()
-    {
-        return _address.IsInUSA();
-    }
-
-    public string GetShippingLabel()
-    {
-        return $"{_name}\n{_address.GetFullAddress()}";
-    }
-}
-
-// Address Class
-class Address
+// Address.cs
+public class Address
 {
     private string _street;
     private string _city;
@@ -106,57 +14,94 @@ class Address
         _country = country;
     }
 
-    public bool IsInUSA()
-    {
-        return _country.ToUpper() == "USA";
-    }
-
-    public string GetFullAddress()
-    {
-        return $"{_street}\n{_city}, {_state}\n{_country}";
-    }
+    public bool IsInUSA() => _country.ToLower() == "usa";
+    public override string ToString() => $"{_street}, {_city}, {_state}, {_country}";
 }
 
-// Order Class
-class Order
+// Customer.cs
+public class Customer
 {
-    private List<Product> _products;
+    private string _name;
+    private Address _address;
+
+    public Customer(string name, Address address)
+    {
+        _name = name;
+        _address = address;
+    }
+
+    public bool IsInUSA() => _address.IsInUSA();
+    public override string ToString() => $"{_name}\n{_address}";
+}
+
+// Product.cs
+public class Product
+{
+    private string _name;
+    private string _id;
+    private double _price;
+    private int _quantity;
+
+    public Product(string name, string id, double price, int quantity)
+    {
+        _name = name;
+        _id = id;
+        _price = price;
+        _quantity = quantity;
+    }
+
+    public double GetTotalPrice() => _price * _quantity;
+    public override string ToString() => $"{_name} (ID: {_id}) - ${_price} x {_quantity}";
+}
+
+// Order.cs
+public class Order
+{
+    private List<Product> _products = new List<Product>();
     private Customer _customer;
 
     public Order(Customer customer)
     {
         _customer = customer;
-        _products = new List<Product>();
     }
 
-    public void AddProduct(Product product)
+    public void AddProduct(Product product) => _products.Add(product);
+    public double GetTotalPrice() => _products.Sum(p => p.GetTotalPrice()) + (_customer.IsInUSA() ? 5.0 : 35.0);
+    public string GetPackingLabel() => string.Join("\n", _products);
+    public string GetShippingLabel() => _customer.ToString();
+}
+
+// Program.cs
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+class Program
+{
+    static void Main()
     {
-        _products.Add(product);
+        Address address1 = new Address("123 Main St", "New York", "NY", "USA");
+        Address address2 = new Address("456 Maple Ave", "Toronto", "Canada");
+        Customer customer1 = new Customer("John Doe", address1);
+        Customer customer2 = new Customer("Alice Smith", address2);
+
+        Order order1 = new Order(customer1);
+        order1.AddProduct(new Product("Laptop", "L123", 999.99, 1));
+        order1.AddProduct(new Product("Mouse", "M456", 49.99, 2));
+
+        Order order2 = new Order(customer2);
+        order2.AddProduct(new Product("Monitor", "M789", 199.99, 1));
+        order2.AddProduct(new Product("Keyboard", "K101", 89.99, 1));
+
+        PrintOrderDetails(order1);
+        PrintOrderDetails(order2);
     }
 
-    public double CalculateTotalPrice()
+    static void PrintOrderDetails(Order order)
     {
-        double total = 0;
-        foreach (var product in _products)
-        {
-            total += product.GetTotalCost();
-        }
-        total += _customer.LivesInUSA() ? 5 : 35;
-        return total;
-    }
-
-    public string GetPackingLabel()
-    {
-        string label = "Packing List:\n";
-        foreach (var product in _products)
-        {
-            label += product.GetPackingLabel() + "\n";
-        }
-        return label;
-    }
-
-    public string GetShippingLabel()
-    {
-        return "Shipping Label:\n" + _customer.GetShippingLabel();
+        Console.WriteLine("\nORDER DETAILS");
+        Console.WriteLine("Packing Label:\n" + order.GetPackingLabel());
+        Console.WriteLine("Shipping Label:\n" + order.GetShippingLabel());
+        Console.WriteLine($"Total Price: ${order.GetTotalPrice():F2}\n");
     }
 }
